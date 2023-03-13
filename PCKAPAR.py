@@ -12,8 +12,10 @@ class Ui_MainWindow(object):
         
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(148, 203)
+        
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        
         self.timeEdit = QtWidgets.QTimeEdit(self.centralwidget)
         self.timeEdit.setGeometry(QtCore.QRect(0, 30, 111, 31))
         font = QtGui.QFont()
@@ -23,9 +25,11 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.timeEdit.setFont(font)
         self.timeEdit.setObjectName("timeEdit")
+        
         self.info = QtWidgets.QLabel(self.centralwidget)
         self.info.setGeometry(QtCore.QRect(0, 10, 91, 16))
         self.info.setObjectName("info")
+        
         self.screen = QtWidgets.QLabel(self.centralwidget)
         self.screen.setGeometry(QtCore.QRect(10, 130, 121, 31))
         font = QtGui.QFont()
@@ -37,6 +41,7 @@ class Ui_MainWindow(object):
         self.screen.setFrameShape(QtWidgets.QFrame.Box)
         self.screen.setFrameShadow(QtWidgets.QFrame.Plain)
         self.screen.setObjectName("screen")
+        
         self.info_2 = QtWidgets.QLabel(self.centralwidget)
         self.info_2.setGeometry(QtCore.QRect(0, 110, 151, 21))
         font = QtGui.QFont()
@@ -46,18 +51,22 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.info_2.setFont(font)
         self.info_2.setObjectName("info_2")
+        
         self.start_button = QtWidgets.QPushButton(self.centralwidget)
         self.start_button.setGeometry(QtCore.QRect(30, 70, 81, 31))
         self.start_button.setObjectName("start_button")
+        
         self.reset_button = QtWidgets.QPushButton(self.centralwidget)
         self.reset_button.setGeometry(QtCore.QRect(30, 170, 81, 31))
         self.reset_button.setObjectName("reset_button")
+        
         self.set_button = QtWidgets.QPushButton(self.centralwidget)
         self.set_button.setGeometry(QtCore.QRect(110, 30, 41, 31))
         font = QtGui.QFont()
         font.setPointSize(8)
         self.set_button.setFont(font)
         self.set_button.setObjectName("pushButton")
+        
         MainWindow.setCentralWidget(self.centralwidget)
         
         self.timer = QTimer()
